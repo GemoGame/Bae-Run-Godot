@@ -1,0 +1,303 @@
+[gd_scene load_steps=42 format=2]
+
+[ext_resource path="res://assets/images/bar_back.png" type="Texture" id=1]
+[ext_resource path="res://assets/fonts/CheckboxFLF.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://scene/Spawner.gd" type="Script" id=3]
+[ext_resource path="res://scene/Chesse.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/images/bar_back - Under.png" type="Texture" id=5]
+[ext_resource path="res://assets/images/bae.png" type="Texture" id=6]
+[ext_resource path="res://scene/BG.gd" type="Script" id=7]
+[ext_resource path="res://scene/Player.gd" type="Script" id=8]
+[ext_resource path="res://scene/Main.gd" type="Script" id=9]
+[ext_resource path="res://assets/music/Yatta.ogg" type="AudioStream" id=10]
+[ext_resource path="res://assets/music/bgm.ogg" type="AudioStream" id=11]
+[ext_resource path="res://assets/music/Wuhu.ogg" type="AudioStream" id=12]
+[ext_resource path="res://assets/music/ojou laugh.ogg" type="AudioStream" id=13]
+
+[sub_resource type="DynamicFont" id=1]
+size = 38
+font_data = ExtResource( 2 )
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 0, 0, 208, 512 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 208, 0, 208, 512 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 416, 0, 208, 512 )
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 624, 0, 208, 512 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 832, 0, 208, 512 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 1040, 0, 208, 512 )
+
+[sub_resource type="AtlasTexture" id=8]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 1248, 0, 208, 512 )
+
+[sub_resource type="AtlasTexture" id=9]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 1456, 0, 208, 512 )
+
+[sub_resource type="AtlasTexture" id=10]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 0, 512, 208, 512 )
+
+[sub_resource type="AtlasTexture" id=11]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 208, 512, 208, 512 )
+
+[sub_resource type="AtlasTexture" id=12]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 416, 512, 208, 512 )
+
+[sub_resource type="AtlasTexture" id=13]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 624, 512, 208, 512 )
+
+[sub_resource type="AtlasTexture" id=14]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 832, 512, 208, 512 )
+
+[sub_resource type="AtlasTexture" id=15]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 1040, 512, 208, 512 )
+
+[sub_resource type="AtlasTexture" id=16]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 1248, 512, 208, 512 )
+
+[sub_resource type="AtlasTexture" id=17]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 1456, 512, 208, 512 )
+
+[sub_resource type="AtlasTexture" id=18]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 0, 1024, 208, 512 )
+
+[sub_resource type="AtlasTexture" id=19]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 208, 1024, 208, 512 )
+
+[sub_resource type="AtlasTexture" id=20]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 416, 1024, 208, 512 )
+
+[sub_resource type="AtlasTexture" id=21]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 624, 1024, 208, 512 )
+
+[sub_resource type="AtlasTexture" id=22]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 832, 1024, 208, 512 )
+
+[sub_resource type="AtlasTexture" id=23]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 1040, 1024, 208, 512 )
+
+[sub_resource type="AtlasTexture" id=24]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 1248, 1024, 208, 512 )
+
+[sub_resource type="AtlasTexture" id=25]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 1456, 1024, 208, 512 )
+
+[sub_resource type="SpriteFrames" id=26]
+animations = [ {
+"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ) ],
+"loop": true,
+"name": "run",
+"speed": 17.0
+}, {
+"frames": [ SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ) ],
+"loop": true,
+"name": "jump",
+"speed": 20.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=27]
+extents = Vector2( 65.4547, 122.755 )
+
+[sub_resource type="RectangleShape2D" id=28]
+extents = Vector2( 612.47, 9.10083 )
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 9 )
+
+[node name="BG" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="BG"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 987.0
+margin_bottom = 562.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hakos" type="Label" parent="BG"]
+anchor_right = 1.0
+margin_top = 10.6787
+margin_right = 984.0
+margin_bottom = 54.6787
+custom_fonts/font = SubResource( 1 )
+text = "HAKOS BAELZ"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score_Label" type="Label" parent="BG"]
+margin_left = 12.0135
+margin_top = 12.0136
+margin_right = 165.014
+margin_bottom = 56.0136
+custom_fonts/font = SubResource( 1 )
+text = "SCORE"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score" type="Label" parent="BG"]
+margin_left = 136.154
+margin_top = 10.6787
+margin_right = 176.154
+margin_bottom = 54.6787
+custom_fonts/font = SubResource( 1 )
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BaeLoad" type="TextureProgress" parent="BG"]
+margin_left = 295.0
+margin_top = 392.0
+margin_right = 727.0
+margin_bottom = 512.0
+min_value = 40.0
+value = 50.0
+texture_under = ExtResource( 1 )
+texture_progress = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="BG"]
+autostart = true
+
+[node name="Yatta" type="AudioStreamPlayer2D" parent="BG"]
+stream = ExtResource( 10 )
+
+[node name="HOLO" type="Label" parent="BG"]
+margin_left = 817.351
+margin_top = 10.2795
+margin_right = 1002.35
+margin_bottom = 54.2795
+custom_fonts/font = SubResource( 1 )
+text = "HOLOEN 2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Ojou" type="AudioStreamPlayer2D" parent="BG"]
+stream = ExtResource( 13 )
+volume_db = 1.0
+
+[node name="Info" type="Label" parent="BG"]
+margin_left = 20.0
+margin_top = 542.0
+margin_right = 630.0
+margin_bottom = 586.0
+custom_fonts/font = SubResource( 1 )
+text = ">>> Get 5 Score for Ojou Laugh"
+align = 1
+valign = 1
+
+[node name="Player" type="Node2D" parent="."]
+position = Vector2( 492.702, 246.922 )
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 8 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Player"]
+frames = SubResource( 26 )
+animation = "jump"
+frame = 13
+playing = true
+
+[node name="Bae" type="KinematicBody2D" parent="Player"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/Bae"]
+position = Vector2( 20.6361, 118.473 )
+shape = SubResource( 27 )
+
+[node name="jump" type="AudioStreamPlayer2D" parent="Player"]
+stream = ExtResource( 12 )
+
+[node name="Spawner" type="Node2D" parent="Player"]
+position = Vector2( 1190.08, 194.626 )
+scale = Vector2( 2, 2 )
+script = ExtResource( 3 )
+scenes = [ ExtResource( 4 ) ]
+
+[node name="Timer" type="Timer" parent="Player/Spawner"]
+autostart = true
+
+[node name="Floor" type="Node2D" parent="."]
+position = Vector2( 492.702, 360 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Floor"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor/StaticBody2D"]
+position = Vector2( 19.298, 24 )
+shape = SubResource( 28 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+volume_db = -20.0
+autoplay = true
+
+[connection signal="timeout" from="BG/Timer" to="BG" method="_on_Timer_timeout"]
+[connection signal="timeout" from="Player/Spawner/Timer" to="Player/Spawner" method="_on_Timer_timeout"]

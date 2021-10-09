@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/ojou laugh.ogg-6d27e427d7347ea4c23c356dc470dc4d.oggstr"
+
+[deps]
+
+source_file="res://assets/music/ojou laugh.ogg"
+dest_files=[ "res://.import/ojou laugh.ogg-6d27e427d7347ea4c23c356dc470dc4d.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Wuhu.ogg-576c631130cd625098d39b12732987e1.oggstr"
+
+[deps]
+
+source_file="res://assets/music/Wuhu.ogg"
+dest_files=[ "res://.import/Wuhu.ogg-576c631130cd625098d39b12732987e1.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
